@@ -1,0 +1,134 @@
+/*shared*/
+#section-image {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+#button-view {
+    color: white;
+    background-color: black;
+    height: 43px;
+    width: 133px;
+    margin: var(--space-medium);
+    padding: var(--space-small);
+    text-align: center;
+    display: grid;
+    align-items: center;
+}
+
+/*Home.jsx*/
+.categories {
+    background-color: var(--color-light-orange);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.categories a{
+    text-decoration: none;
+    color: black;
+}
+
+/*Dish.jsx*/
+.product-page{
+    background-color: var(--color-light-orange);
+    height: 100vh;
+    text-align: center;
+}
+
+.product-page h2 {
+    margin: var(--space-medium);
+}
+
+.product-page p {
+    margin: var(--space-medium);
+}
+.product-text{
+    display: grid;
+    justify-content: center;
+}
+#button-back {
+    color: white;
+    background-color: black;
+    height: 43px;
+    width: 280px;
+    margin: var(--space-medium);
+    padding: var(--space-small);
+    text-align: center;
+    display: grid;
+    align-items: center;
+    text-decoration: none;
+}
+
+/*ItemDish.jsx*/
+.dish-preview{
+    margin: var(--space-medium);
+    display: grid;
+}
+
+.dish-text{
+    margin-top: 0;
+    padding-top: 0;
+    background-color: black;
+    color: white;
+}
+
+.dish-preview img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.dish-text h3 {
+    margin: var(--space-medium);
+}
+
+.dish-text p {
+    margin: var(--space-medium);
+}
+
+.button-details{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    height: 43px;
+    width: 133px;
+    margin: var(--space-medium);
+    padding: var(--space-small);
+    text-align: center;
+    display: grid;
+    align-items: center;
+}
+
+/*Category.jsx*/
+.categories-page {
+    background-color: var(--color-light-orange);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.category-info {
+    padding: var(--space-medium);
+    text-align: center;
+}
+
+/*ItemCategory.jsx*/
+.category-card h3 {
+    margin: var(--space-medium);
+}
+
+.category-card p {
+    margin: var(--space-medium);
+}
+
+
+
+
+
+
+
+
+
+
+

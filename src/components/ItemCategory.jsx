@@ -2,10 +2,11 @@ export default function ItemCategory({ item }) {
     const { description, imageURL, name } = item;
   
     return (
-      <li>
-        <h2>{name}</h2>
-        <img src={imageURL} alt="Category thumbnail" />
+      <section className="category-card">
+        <img id="section-image" src={imageURL} alt="Category thumbnail" />
+        <h3>{name}</h3>
         <p>{description}</p>
-      </li>
+        <p id="button-view">View menu</p>
+      </section>
     );
   }

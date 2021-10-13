@@ -41,13 +41,15 @@ export default function Category() {
   ));
 
   return (
-    <div>
-      <h1>{category.name}</h1>
-      <p>{category.description}</p>
-
+    <div className="categories-page">
+      <img id="section-image" src={category.imageURL} alt=""/>
+      <div className="category-info">
+        <h1>{category.name}</h1>
+        <p>{category.description}</p>
+      </div>
       {/* Dynamic content that comes from this page fetch */}
       {status === 0 && <p>Loading ⏱</p>}
-      {status === 1 && <ol>{Categories}</ol>}
+      {status === 1 && Categories}
       {status === 2 && <p>Error 🚨</p>}
     </div>
   );

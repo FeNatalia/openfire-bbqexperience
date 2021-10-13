@@ -6,6 +6,7 @@ import { useState, useEffect, useCallback } from "react";
 import Browser from "./components/Browser";
 import { getCollection } from "./scripts/firestore";
 import { useRestaurant } from "./state/RestaurantProvider";
+import "./styles/styles.css";
 
 export default function App() {
   // Global state
