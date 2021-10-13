@@ -2,17 +2,18 @@
 import { Link } from "react-router-dom";
 
 export default function ItemDish({ item, to }) {
-  const { name, imageURL } = item;
+  const { name, imageURL, price } = item;
 
   return (
-    <li>
+    <article className="dish-preview">
       <img src={imageURL} alt="Dish thumbnail" />
-      <h2>{name}</h2>
-      <Link className="button" to={to}>
-        View dish
-      </Link>
-      <hr />
-      <br />
-    </li>
+      <div className="dish-text">
+        <h3>{name}</h3>
+        <p>Price: {price} SEK:-</p>
+        <Link className="button-details" to={to}>
+          View details
+        </Link>
+      </div>
+    </article>
   );
 }

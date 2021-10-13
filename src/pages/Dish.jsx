@@ -23,10 +23,13 @@ export default function Dish() {
   if (dish === undefined) return ErrorComponent;
 
   return (
-    <div>
-      <img src={dish.imageURL} alt="dish thumbnail" />
-      <h1>{dish.name}</h1>
-      <p>Price: {dish.price}</p>
+    <div className="product-page">
+      <img id="section-image" src={dish.imageURL} alt="dish thumbnail" />
+      <div className="product-text">
+        <h2>{dish.name}</h2>
+        <p>Price: {dish.price} SEK :-</p>
+        <Link to="/" id="button-back">Go back</Link>
+      </div>
     </div>
   );
 }
