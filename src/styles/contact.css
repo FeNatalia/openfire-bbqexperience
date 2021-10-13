@@ -1,0 +1,51 @@
+.contact {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: var(--color-light-orange);
+    margin: 0;
+    padding: 0;
+  }
+
+  .contact-header{
+    margin-top: 78px;
+    width: 100%;
+  }
+
+  .contact h1 {
+    text-align: center;
+  }
+  
+  .contact-content {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    max-width: 300px;
+  }
+  
+  .contact-map {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    max-width: 300px;
+  }
+  
+  .contact-map img {
+    width: 300px;
+    height: auto;
+    margin-bottom: var(--space-medium);
+  }
+  
+  .info section {
+    margin-bottom: var(--space-bigger);
+  }
+  
+  .contact input {
+    width: 80%;
+    padding: 8px 2px;
+    margin: 2px 0;
+    box-sizing: border-box;
+  }
