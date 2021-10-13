@@ -1,9 +1,8 @@
 // NPM Package
 import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore/lite";
 
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
+// Using the Projectcredentials
 const firebaseConfiguration = {
   apiKey: "AIzaSyBxqIk6WjthYB83JM1cWkMjlEbKaJnx5xg",
   authDomain: "openfire-bbqexperience.firebaseapp.com",
@@ -13,4 +12,5 @@ const firebaseConfiguration = {
   appId: "1:557620078829:web:859076ca4c31aac92b44e4",
 };
 
-export const app = initializeApp(firebaseConfiguration);
+const firebaseInstance = initializeApp(firebaseConfiguration);
+export const fireStoreInstance = getFirestore(firebaseInstance);
