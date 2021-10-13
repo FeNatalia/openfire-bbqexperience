@@ -27,8 +27,11 @@ export default function Dish() {
       <img id="section-image" src={dish.imageURL} alt="dish thumbnail" />
       <div className="product-text">
         <h2>{dish.name}</h2>
+        <p>{dish.description}</p>
         <p>Price: {dish.price} SEK :-</p>
-        <Link to="/" id="button-back">Go back</Link>
+        <div className="product-link">
+          <Link to="/" className="button-back">Go back</Link>
+        </div>
       </div>
     </div>
   );

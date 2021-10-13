@@ -2,6 +2,7 @@
 #section-image {
     max-width: 100%;
     object-fit: cover;
+    margin-top: 80px;
 }
 
 #button-view {
@@ -14,6 +15,11 @@
     text-align: center;
     display: grid;
     align-items: center;
+}
+
+/*WelcomePage.jsx*/
+.welcome img{
+    margin-top: 80px;
 }
 
 /*Home.jsx*/
@@ -33,6 +39,7 @@
 .product-page{
     background-color: var(--color-light-orange);
     height: 100vh;
+    padding-bottom: 50px;
     text-align: center;
 }
 
@@ -43,11 +50,18 @@
 .product-page p {
     margin: var(--space-medium);
 }
+
 .product-text{
     display: grid;
     justify-content: center;
 }
-#button-back {
+
+.product-link{
+    display: grid;
+    justify-content: center;
+}
+
+.button-back {
     color: white;
     background-color: black;
     height: 43px;
