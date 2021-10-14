@@ -3,16 +3,16 @@ import { Link } from "react-router-dom";
 
 // Project files
 import { useRestaurant } from "../state/RestaurantProvider";
-import ItemCategory from "../components/ItemCategory";
+import CategoryItem from "../components/CategoryItem";
 
-export default function Home() {
+export default function MenuPage() {
   // Global state
   const { categories } = useRestaurant();
 
   // Components
   const CategoryItems = categories.map((item) => (
     <Link key={item.id} to={`/category/${item.id}`}>
-      <ItemCategory item={item} />
+      <CategoryItem item={item} />
     </Link>
   ));
 

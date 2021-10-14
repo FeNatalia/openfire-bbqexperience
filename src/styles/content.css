@@ -2,7 +2,7 @@
 #section-image {
     max-width: 100%;
     object-fit: cover;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 #button-view {
@@ -17,12 +17,12 @@
     align-items: center;
 }
 
-/*WelcomePage.jsx*/
+/*HomePage.jsx*/
 .welcome img{
     margin-top: 80px;
 }
 
-/*Home.jsx*/
+/*MenuPage.jsx*/
 .categories {
     background-color: var(--color-light-orange);
     display: grid;
@@ -35,7 +35,7 @@
     color: black;
 }
 
-/*Dish.jsx*/
+/*ProductPage.jsx*/
 .product-page{
     background-color: var(--color-light-orange);
     height: 100vh;
@@ -74,7 +74,7 @@
     text-decoration: none;
 }
 
-/*ItemDish.jsx*/
+/*ProductItem.jsx*/
 .dish-preview{
     margin: var(--space-medium);
     display: grid;
@@ -114,7 +114,7 @@
     align-items: center;
 }
 
-/*Category.jsx*/
+/*CategoryPage.jsx*/
 .categories-page {
     background-color: var(--color-light-orange);
     display: grid;
@@ -127,7 +127,7 @@
     text-align: center;
 }
 
-/*ItemCategory.jsx*/
+/*CategoryItem.jsx*/
 .category-card h3 {
     margin: var(--space-medium);
 }
