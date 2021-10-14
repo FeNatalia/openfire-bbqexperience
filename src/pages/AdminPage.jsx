@@ -17,11 +17,15 @@ export default function AdminPage(){
     console.log(ProductItems);
     return(
         <div className="admin-page">
-            <h1>Admin page</h1>
+            <header>
+                <h1>Admin page</h1>
+            </header>
             {ProductItems}
-            <Link to="edit/new-profile" className="button-back">
-                Add category
-            </Link>
+            <div className="admin-add">
+                <Link to="edit/new-profile" id="button-add">
+                    Add category
+                </Link>
+            </div>
         </div>
     )
 }

@@ -7,8 +7,10 @@ export default function InputField({ onChange, options, state }) {
   const inputReference = useRef(null);
 
   return (
-    <label>
-      {label}
+    <div className="edit-form">
+      <div>
+        {label}
+      </div>
       <input
         onChange={() => onChange(key, inputReference.current.value)}
         placeholder={placeholder}
@@ -16,6 +18,6 @@ export default function InputField({ onChange, options, state }) {
         type={type}
         value={state}
       />
-    </label>
+    </div>
   );
 }

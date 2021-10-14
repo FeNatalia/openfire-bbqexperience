@@ -20,7 +20,7 @@ function createProfile(state, action) {
 function updateProfile(state, action) {
   const { payload } = action;
   const newState = [...state];
-  const index = newState.findIndex((item) => item.id == payload.id);
+  const index = newState.findIndex((item) => item.id === payload.id);
 
   newState[index] = { ...payload };
   return newState;

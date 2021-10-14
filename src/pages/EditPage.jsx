@@ -47,15 +47,13 @@ export default function EditPage() {
     
 
     return(
-        <div>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <h1>Edit page</h1>
+        <div className="edit-page">
+            <header>
+                <h1>Edit page</h1>
+            </header>
             <Information profile={profile} onChange={onChange} />
-            <Link to="/admin">Go back</Link>
-            <button onClick={()=> onSave(profile)}>Save profile</button>
+            <button onClick={()=> onSave(profile)} className="button-save">Save</button>
+            <Link to="/admin" id="button-add">Go back</Link>
         </div>
     )
 }
