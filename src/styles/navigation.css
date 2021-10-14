@@ -9,6 +9,8 @@
     justify-content: center;
     position: fixed;
     z-index: 1000;
+    margin: 0;
+    padding: 0;
   }
   
   .navigation img {

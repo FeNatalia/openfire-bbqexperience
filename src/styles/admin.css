@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+
+/*AdminPage.jsx*/
+.admin-page{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-light-orange);
+}
+.admin-page h1{
+    text-align: center;
+}
+
+.admin-page header{
+    margin-top: 60px;
+}
+
+#button-add{
+    color: white;
+    background-color: black;
+    height: 43px;
+    width: 250px;
+    margin: var(--space-medium);
+    padding: var(--space-small);
+    text-align: center;
+    display: grid;
+    align-items: center;
+    text-decoration: none;
+}
+
+.admin-add{
+    display: grid;
+    justify-content: center;
+}
+
+/*EditPage.jsx*/
+.edit-page{
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    background-color: var(--color-light-orange);
+}
+
+.edit-page header{
+    margin-top: 60px;
+}
+
+.button-save{
+    color: black;
+    background-color: var(--color-light-orange);
+    border: solid;
+    border-color: white;
+    font-size: 16px;
+    font-family: "Space Mono", monospace;
+    height: 50px;
+    width: 268px;
+    margin: var(--space-medium);
+    padding: var(--space-small);
+    text-align: center;
+    display: grid;
+    align-items: center;
+    text-decoration: none;
+}
+
+/*InputField.jsx*/
+.edit-form input{
+    height: 30px;
+    width: 260px;
+    border: solid;
+    border-color: white;
+}
