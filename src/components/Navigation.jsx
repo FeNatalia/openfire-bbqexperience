@@ -6,8 +6,8 @@ import Logo from "../assets/icons/Logo.png";
 export default function Navigation() {
   return (
     <nav className="navigation">
-      <Link to="/">Menu</Link>
-      <Link to="/welcome">
+      <Link to="/menu">Menu</Link>
+      <Link to="/">
         <img
           src={Logo}
           alt="openfire text surrounded by leaves"

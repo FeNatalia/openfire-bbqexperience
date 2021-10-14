@@ -1,11 +1,10 @@
-
 // NPM Packages
 import { useState, useEffect, useCallback } from "react";
 
 // Project files
-import Browser from "./components/Browser";
 import { getCollection } from "./scripts/firestore";
 import { useRestaurant } from "./state/RestaurantProvider";
+import Browser from "./components/Browser";
 import "./styles/styles.css";
 
 export default function App() {

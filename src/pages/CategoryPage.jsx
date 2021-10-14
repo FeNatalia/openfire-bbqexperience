@@ -3,11 +3,11 @@ import { useState, useEffect, useCallback } from "react";
 import { useParams } from "react-router-dom";
 
 // Project files
-import ItemDish from "../components/ItemDish.jsx";
 import { getCollection } from "../scripts/firestore";
 import { useRestaurant } from "../state/RestaurantProvider";
+import ProductItem from "../components/ProductItem.jsx";
 
-export default function Category() {
+export default function CategoryPage() {
   // Global state
   const { categories, dispatch2 } = useRestaurant();
   const { categoryId } = useParams();
@@ -37,7 +37,7 @@ export default function Category() {
 
   // Components
   const Categories = dishes.map((item) => (
-    <ItemDish key={item.id} item={item} to={`/dish/${item.id}`} />
+    <ProductItem key={item.id} item={item} to={`/dish/${item.id}`} />
   ));
 
   return (

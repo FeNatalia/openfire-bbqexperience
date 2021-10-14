@@ -1,4 +1,4 @@
-export default function ItemCategory({ item }) {
+export default function CategoryItem({ item }) {
     const { description, imageURL, name } = item;
   
     return (

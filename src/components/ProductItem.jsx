@@ -1,7 +1,7 @@
 // NPM Package
 import { Link } from "react-router-dom";
 
-export default function ItemDish({ item, to }) {
+export default function ProductItem({ item, to }) {
   const { name, imageURL, price } = item;
 
   return (

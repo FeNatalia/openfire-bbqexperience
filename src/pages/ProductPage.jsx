@@ -4,7 +4,7 @@ import { useParams, Link } from "react-router-dom";
 // Project file
 import { useRestaurant } from "../state/RestaurantProvider";
 
-export default function Dish() {
+export default function ProductPage() {
   // Global state
   const { categories, dishId } = useParams();
   const { dishes } = useRestaurant();
@@ -16,7 +16,7 @@ export default function Dish() {
   const ErrorComponent = (
     <p>
       Something happened please go to the home page and try again{" "}
-      <Link to="/">Go home</Link>
+      <Link to="/">Go to the main page</Link>
     </p>
   );
 
@@ -30,7 +30,7 @@ export default function Dish() {
         <p>{dish.description}</p>
         <p>Price: {dish.price} SEK :-</p>
         <div className="product-link">
-          <Link to="/" className="button-back">Go back</Link>
+          <Link to="/menu" className="button-back">Go back</Link>
         </div>
       </div>
     </div>
