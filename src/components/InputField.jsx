@@ -8,9 +8,7 @@ export default function InputField({ onChange, options, state }) {
 
   return (
     <div className="edit-form">
-      <div>
-        {label}
-      </div>
+      <div>{label}</div>
       <input
         onChange={() => onChange(key, inputReference.current.value)}
         placeholder={placeholder}

@@ -31,8 +31,8 @@ p {
   line-height: 22px;
 }
 
-/*
-@media (min-width: 750px) {
+/*Desktop*/
+@media (min-width: 1000px) {
   h1 {
     font-size: 50px;
     font-weight: normal;
@@ -56,4 +56,4 @@ p {
     font-weight: normal;
     line-height: 24px;
   }
-}*/
+}

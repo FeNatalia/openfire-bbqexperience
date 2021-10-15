@@ -31,7 +31,9 @@ export default function ProductPage() {
         <p>{dish.description}</p>
         <p>Price: {dish.price} SEK :-</p>
         <div className="product-link">
-          <button onClick={()=> location.goBack()}className="button-save">Go back</button>
+          <button onClick={() => location.goBack()} className="button-save">
+            Go back
+          </button>
         </div>
       </div>
     </div>

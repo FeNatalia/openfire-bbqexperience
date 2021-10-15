@@ -54,7 +54,7 @@
 
 /*Desktop queries*/
 @media (min-width: 1000px) {
-  .contact-header{
+  .contact-header {
     height: 350px;
   }
 }
