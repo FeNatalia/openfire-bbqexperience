@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# BBQ restaurant web page app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a web page for a BBQ restaurant that shows information about restaurant and its food. The data is connected to Firebase Database (Cloud Firestore). It also has an admin page where you can edit menu categories and see the categories' products, as well as you can add a new category. Soon you will be able to add products too (work in progress).
 
-## Available Scripts
+## How to use it 
 
-In the project directory, you can run:
+When you start the app, the first page you are going to see is the Home page, which has a pitch of the restaurant and a button to the Menu page. When you are in a different page of the app, by clicking on the navigation logo it will bring you back to this page. The Footer has clickable links to the restaurant’s email, and to social media links.
+
+The Menu page showcases the menu categories. Each category has a short description, a photo and a button which will open a more detailed page of that section. The Menu button on the navigation bar opens the Menu page. 
+
+Each catgeory consists of a list of dishes within that category. When you click the View details button, it will open a new page with a detailed information about that particular item such as photo, price as well as a short description. You can click on the Go Back button which will send you back to the category page.
+
+The admin page can be found through " /admin " path, example of the address: " localhost:3000/admin ". The Admin page shows existing categories and when you click on any category it will open a new page with the particular category's information inside the form which you can edit and save. On the same page you can see if there are dishes associated with that category.
+
+## How to start 
+
+You need to have npm installed on your computer. In the project terminal first run:
+
+### `npm install`
+
+It would compile the project before you would run it. After this go to the next step:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Runs the app in the development mode.
+Open http://localhost:3000 to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Diagram
 
-### `npm test`
+The diagram/component tree of the project structure: https://whimsical.com/bbqrestaurantdiagram-Se4gzs1YTdxrWzJfxxnxbp
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Prototype
 
-### `npm run build`
+The prototype is made in Figma and available through the link: https://www.figma.com/file/fl7UhTHGN4wJoy3WAM6qM0/OpenFire-Food-Experience?node-id=127%3A450
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Organisational documentation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The documentation of the project is available through the links: 
+https://docs.google.com/spreadsheets/d/1x691eEIS4e5rGNAEQBcNt9HoS9ScNXpO/edit?usp=sharing&ouid=100998197949313405589&rtpof=true&sd=true
+https://docs.google.com/document/d/1ZXBLL_DtHc0E_NQelL4gpyIZXuf_vJOW/edit?usp=sharing&ouid=100998197949313405589&rtpof=true&sd=true
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Link
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The app is hosted on: https://openfire-bbqexperience.web.app
