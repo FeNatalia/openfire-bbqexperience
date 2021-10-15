@@ -38,7 +38,6 @@
 /*ProductPage.jsx*/
 .product-page{
     background-color: var(--color-light-orange);
-    height: 100vh;
     padding-bottom: 50px;
     text-align: center;
 }

@@ -6,6 +6,7 @@ import { useParams, useHistory, Link } from "react-router-dom";
 import Information from "../components/Information";
 import { useRestaurant } from "../state/RestaurantProvider";
 import { createDocument, updateDocument } from "../scripts/firestore";
+import DishList from "../components/DishList";
 
 export default function EditPage() {
     // Global state
@@ -54,6 +55,7 @@ export default function EditPage() {
             <Information profile={profile} onChange={onChange} />
             <button onClick={()=> onSave(profile)} className="button-save">Save</button>
             <Link to="/admin" id="button-add">Go back</Link>
+            {id === "new-profile" ?  null : <DishList categoryId={id}/>}
         </div>
     )
 }
