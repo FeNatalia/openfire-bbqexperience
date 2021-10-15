@@ -15,7 +15,7 @@ import EditPage from "../pages/EditPage";
 export default function Browser() {
   return (
     <BrowserRouter>
-      <Navigation/>
+      <Navigation />
       <Switch>
         <Route component={MenuPage} path="/menu" />
         <Route component={CategoryPage} path="/category/:categoryId" />
@@ -25,7 +25,7 @@ export default function Browser() {
         <Route component={AdminPage} path="/admin" />
         <Route component={EditPage} path="/edit/:id" />
       </Switch>
-      <Footer/>
+      <Footer />
     </BrowserRouter>
   );
 }

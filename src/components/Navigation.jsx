@@ -8,10 +8,7 @@ export default function Navigation() {
     <nav className="navigation">
       <Link to="/menu">Menu</Link>
       <Link to="/">
-        <img
-          src={Logo}
-          alt="openfire text surrounded by leaves"
-        />
+        <img src={Logo} alt="openfire text surrounded by leaves" />
       </Link>
       <Link to="/contact">Contact</Link>
     </nav>

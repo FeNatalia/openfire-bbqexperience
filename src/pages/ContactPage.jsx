@@ -1,16 +1,15 @@
 // Project files
 import ContactPhoto from "../assets/pictures/contact.jpg";
-import RestaurantMap from "../assets/pictures/restaurant-map.jpg";
 
 export default function ContactPage() {
   return (
     <div className="contact">
       <div className="contact-image">
-      <img
-        className="contact-header"
-        src={ContactPhoto}
-        alt="a young woman and nature"
-      />
+        <img
+          className="contact-header"
+          src={ContactPhoto}
+          alt="a bbq food on the openfire "
+        />
       </div>
       <h1>Contact Us</h1>
       <div className="contact-content">

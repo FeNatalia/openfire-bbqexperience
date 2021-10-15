@@ -42,7 +42,7 @@ export default function CategoryPage() {
 
   return (
     <div className="categories-page">
-      <img id="section-image" src={category.imageURL} alt=""/>
+      <img id="section-image" src={category.imageURL} alt="menu category" />
       <div className="category-info">
         <h1>{category.name}</h1>
         <p>{category.description}</p>

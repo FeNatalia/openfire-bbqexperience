@@ -1,26 +1,26 @@
 .navigation {
-    width: 100vw;
-    height: 60px;
-    background: black;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    position: fixed;
-    z-index: 1000;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navigation img {
-    width: 60px;
-    height: auto;
-  }
-  
-  .navigation a {
-    font-size: 12px;
-    margin: 6px;
-    text-decoration: none;
-    color: #fff;
-  }
+  width: 100vw;
+  height: 60px;
+  background: black;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 1000;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation img {
+  width: 60px;
+  height: auto;
+}
+
+.navigation a {
+  font-size: 12px;
+  margin: 6px;
+  text-decoration: none;
+  color: #fff;
+}

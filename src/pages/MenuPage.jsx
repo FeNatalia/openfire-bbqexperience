@@ -18,9 +18,7 @@ export default function MenuPage() {
 
   return (
     <div className="menu-page">
-      <div className="categories">
-        {CategoryItems}
-      </div>
+      <div className="categories">{CategoryItems}</div>
     </div>
   );
 }

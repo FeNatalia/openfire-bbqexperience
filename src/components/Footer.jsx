@@ -7,11 +7,7 @@ export default function Footer() {
   return (
     <footer className="footer">
       <span className="social-media">
-        <a
-          href="mailto:info@openfirebbq.se"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href="mailto:info@openfirebbq.se" target="_blank" rel="noreferrer">
           <img src={EmailLogo} alt="email logo" />
         </a>
         <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
