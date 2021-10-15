@@ -5,11 +5,13 @@ import RestaurantMap from "../assets/pictures/restaurant-map.jpg";
 export default function ContactPage() {
   return (
     <div className="contact">
+      <div className="contact-image">
       <img
         className="contact-header"
         src={ContactPhoto}
         alt="a young woman and nature"
       />
+      </div>
       <h1>Contact Us</h1>
       <div className="contact-content">
         <div className="info">
@@ -26,10 +28,6 @@ export default function ContactPage() {
             <p>Call us +12 123 45 67 89 </p>
           </section>
         </div>
-      </div>
-      <div className="contact-map">
-        <h3>Map</h3>
-        <img src={RestaurantMap} alt="Restaurant map" />
       </div>
     </div>
   );

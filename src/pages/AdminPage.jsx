@@ -19,7 +19,9 @@ export default function AdminPage(){
             <header>
                 <h1>Admin page</h1>
             </header>
-            {ProductItems}
+            <div className="products-list">
+                {ProductItems}
+            </div>
             <div className="admin-add">
                 <Link to="edit/new-profile" id="button-add">
                     Add category

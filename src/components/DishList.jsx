@@ -43,7 +43,7 @@ export default function DishList( { categoryId }) {
       {dishes.length === 0 ? null : 
       <div className="product-page">
         <h2>Products in this category:</h2>
-        {DishItems}
+        <div className="products-list">{DishItems}</div>
       </div>}
     </div>
   );
