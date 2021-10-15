@@ -1,5 +1,5 @@
 // NPM package
-import { useParams, Link } from "react-router-dom";
+import { useParams, useHistory, Link } from "react-router-dom";
 
 // Project file
 import { useRestaurant } from "../state/RestaurantProvider";
@@ -8,6 +8,7 @@ export default function ProductPage() {
   // Global state
   const { categories, dishId } = useParams();
   const { dishes } = useRestaurant();
+  const location = useHistory();
 
   // Properties
   const dish = dishes.find((item) => item.id === dishId);
@@ -30,7 +31,7 @@ export default function ProductPage() {
         <p>{dish.description}</p>
         <p>Price: {dish.price} SEK :-</p>
         <div className="product-link">
-          <Link to="/menu" className="button-back">Go back</Link>
+          <button onClick={()=> location.goBack()}className="button-save">Go back</button>
         </div>
       </div>
     </div>

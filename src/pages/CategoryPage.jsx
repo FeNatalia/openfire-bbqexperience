@@ -36,7 +36,7 @@ export default function CategoryPage() {
   useEffect(() => fetchData(path), [fetchData]);
 
   // Components
-  const Categories = dishes.map((item) => (
+  const Products = dishes.map((item) => (
     <ProductItem key={item.id} item={item} to={`/dish/${item.id}`} />
   ));
 
@@ -49,7 +49,7 @@ export default function CategoryPage() {
       </div>
       {/* Dynamic content that comes from this page fetch */}
       {status === 0 && <p>Loading ⏱</p>}
-      {status === 1 && Categories}
+      {status === 1 && <div className="products-list">{Products}</div>}
       {status === 2 && <p>Error 🚨</p>}
     </div>
   );
