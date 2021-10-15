@@ -14,7 +14,6 @@ export default function AdminPage(){
         <AdminItem key ={item.id} item={item} to={`edit/${item.id}`} />
     ))
 
-    console.log(ProductItems);
     return(
         <div className="admin-page">
             <header>

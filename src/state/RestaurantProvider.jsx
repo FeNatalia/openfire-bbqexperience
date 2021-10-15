@@ -1,7 +1,7 @@
 // NPM Packages
 import { createContext, useContext, useReducer } from "react";
 
-// Proeject files
+// Project files
 import categoriesReducer from "./categoriesReducer";
 import dishReducer from "./dishReducer";
 
