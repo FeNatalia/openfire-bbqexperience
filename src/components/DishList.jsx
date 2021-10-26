@@ -35,14 +35,16 @@ export default function DishList({ categoryId }) {
     <AdminProductItem key={item.id} item={item} />
   ));
 
+  // refactor tip
+  // Safeguard or... early return
+  if (dishes.length === 0) return null;
+
   return (
     <div>
-      {dishes.length === 0 ? null : (
-        <div className="product-page">
-          <h2>Products in this category:</h2>
-          <div className="products-list">{DishItems}</div>
-        </div>
-      )}
+      <div className="product-page">
+        <h2>Products in this category:</h2>
+        <div className="products-list">{DishItems}</div>
+      </div>
     </div>
   );
 }
